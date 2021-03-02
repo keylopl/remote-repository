@@ -1,36 +1,3 @@
-Zadanie nr 1.
-
-Zadanie
-1. Stworzenie dziennika, gdzie poprosi nas o:
-Nazwę kursu
-Imię i nazwisko prowadzącego kurs
-Datę rozpoczęcia kursu
-Progu dla prac domowych (w procentach)
-Progu dla obecności (w procentach)
-Liczby kursantów
-Danych każdego kursanta z osobna:
-Identyfikator studenta (np numer porządkowy lub pesel)
-Imienia
-Nazwiska
-Daty urodzenia
-Płci
-2. Dodanie dnia zajęć z zaznaczeniem obecności dla każdego z kursantów z osobna - obecny, nieobecny
-3. Dodanie pracy domowej, gdzie poprosi nas o wypisanie:
-Maksymalnej ilości punktów do uzyskania
-Ilości punktów uzyskanej przez każdą osobę z osobna
-4. Wypisanie raportu z kursu:
-Nazwa kursu
-Data rozpoczęcia kursu
-Próg z obecności
-Prób z pracy domowej
-I dla każdego z kursantów z osobna:
-Ilość uzyskanych punktów łamane na maxymalna ilość punktów z obecności (jeden dzień kursu to jeden punkt), w nawiasie procent i po myślniku informacja czy zaliczone czy nie, np.
-- Jan Nowak 16/20 (80%) - Zaliczone
-- Tomasz Wróbel 10/20 (50%) - Niezaliczone
-Ilość uzyskanych punktów łamane na maxymalna ilość punktów ze wszystkich prac domowych, w nawiasie procent i po myślniku informacja czy zaliczone czy nie,np.:
-- Jan Nowak 16/20 (80%) - Zaliczone
-- Tomasz Wróbel 10/20 (50%) - Niezaliczone
-
 
 Zadanie nr 2.
 
