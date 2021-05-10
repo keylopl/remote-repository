@@ -22,12 +22,25 @@ mydb = mysql.connector.connect(
 my_cursor = mydb.cursor()
 
 # tworzenie database
-my_cursor.execute("CREATE DATABASE biblioteka")
+#my_cursor.execute("CREATE DATABASE biblioteka")
 
 # sprawdzenie czy stworzylismy biblioteke
-my_cursor.execute("SHOW DATABASES")
-for db in my_cursor:
-	print(db)
+#my_cursor.execute("SHOW DATABASES")
+#for db in my_cursor:
+#	print(db)
 
+# tworzenie tabeli
+my_cursor.execute("CREATE TABLE IF NOT EXISTS ksiazki (tytul VARCHAR(255), \
+	imie_autora VARCHAR(255), \
+	nazwisko_autora VARCHAR(255), \
+	rok_wydania INT(10), \
+	ksiazki_id INT AUTO_INCREMENT PRIMARY KEY)")
+
+# wyswietlenie tabeli
+#my_cursor.execute("SELECT * FROM ksiazki")
+#print(my_cursor.description)
+
+#for thing in my_cursor.description:
+#	print(thing)
 
 root.mainloop()
