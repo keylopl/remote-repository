@@ -43,4 +43,44 @@ my_cursor.execute("CREATE TABLE IF NOT EXISTS ksiazki (tytul VARCHAR(255), \
 #for thing in my_cursor.description:
 #	print(thing)
 
+# czyszczenie pol tekstowych
+def clear_fields():
+	tytul_box.delete(0, END)
+	imie_autora_box.delete(0, END)
+	nazwisko_autora_box.delete(0, END)
+	rok_wydania_box.delete(0, END)
+
+
+
+
+
+#glowny formularz do dodawania danych ksiazek
+tytul_label = Label(root, text="Tytuł").grid(row=1, column=0, sticky=W, padx=10)
+imie_autora_label = Label(root, text="Imie autora").grid(row=2, column=0, sticky=W, padx=10)
+nazwisko_autora_label = Label(root, text="Nazwisko autora").grid(row=3, column=0, sticky=W, padx=10)
+rok_wydania_label = Label(root, text="Rok wydania").grid(row=4, column=0, sticky=W, padx=10)
+
+# tworzenie boxow do wpisania danych
+tytul_box = Entry(root)
+tytul_box.grid(row=1, column=1)
+
+imie_autora_box = Entry(root)
+imie_autora_box.grid(row=2, column=1, pady=5)
+
+nazwisko_autora_box = Entry(root)
+nazwisko_autora_box.grid(row=3, column=1, pady=5)
+
+rok_wydania_box = Entry(root)
+rok_wydania_box.grid(row=4, column=1, pady=5)
+
+
+clear_fields_button = Button(root, text="Wyczyść pola", command=clear_fields)
+clear_fields_button.grid(row=14, column=1)
+
+
+
+
+
+
+
 root.mainloop()
