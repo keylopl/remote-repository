@@ -22,7 +22,7 @@ W odpowiedzi, aplikacja powinna wypisać wszystkie książki, które mają dokł
 <nr_porządkowy>. <tytuł> - <imie_autora> <nazwisko_autora> (<rok wydania> r.)
 W przypadku braku pozycji spełniających kryteria, powinna pojawić się stosowna informacja na ekranie.
 Po zakończeniu pracy, program wraca do menu głównego.
-4.  Zaimplementować opcję Znajdź książkę po tytule:
+4.  Zaimplementować opcję Znajdź książkę po imieniu i nazwisku autora:
 Aplikacja powinna zapytać użytkownika o:
 Imię autora
 Nazwisko autora
