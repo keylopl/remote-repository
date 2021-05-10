@@ -71,7 +71,7 @@ def search_book():
 	search_books.geometry("1100x800")
 	def seach_now():
 		searched = search_box.get()
-		sql = "SELECT * FROM ksiazki WHERE tytul = %s"
+		sql = "SELECT ksiazki_id, tytul, imie_autora, nazwisko_autora, rok_wydania FROM ksiazki WHERE tytul = %s"
 		name = (searched, )
 		result = my_cursor.execute(sql, name)
 		result = my_cursor.fetchall()
