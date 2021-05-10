@@ -64,6 +64,22 @@ def add_book():
     
 
 
+# lista ksiazek
+def list_books():
+	list_book_query = Tk()
+	list_book_query.title("Lista książek")
+	list_book_query.geometry("800x600")
+	# zapytanie do bazy
+	my_cursor.execute("SELECT * FROM ksiazki")
+	result = my_cursor.fetchall()
+
+	for index, x in enumerate(result):
+		num = 0
+		for y in x:
+			lookup_label = Label(list_book_query, text=y)
+			lookup_label.grid(row=index, column=num)
+			num +=1
+
 
 
 # tworzenie etykiety
@@ -95,6 +111,9 @@ add_book_button.grid(row=14, column=0, padx=10, pady=10)
 clear_fields_button = Button(root, text="Wyczyść pola", command=clear_fields)
 clear_fields_button.grid(row=14, column=1)
 
+# guzik do listy ksiazek
+list_books_button = Button(root, text="Wyświetl liste książek", command=list_books)
+list_books_button.grid(row=16, column=0, sticky=W, padx=10)	
 
 
 
